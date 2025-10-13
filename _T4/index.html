@@ -1,87 +1,120 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8"> 
-    <title>Mi Perfil Profesional</title> 
-    <meta name="Iván" content="Iván Rodriguez Garcia"> 
-    <meta name="description" content="Página personal creada con HTML">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Iván Rordriguez">
+    <title>Mi perfil profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c5327dff40.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<h1 style="color: rgb(0, 68, 255);"> Perfil Profesional </h1>
-<b> <p> <i> <blockquote>"Aquello imposible es aquello que no se intenta"</blockquote> </i> </p> </b>
-
-<div>
-<img src="" alt="Foto de perfil" title="Mi foto" width="300" height="400">
-</div>
-
-<h2 style="color: crimson;"> Sobre mi: </h2>
-    <b><dt>Nombre:</dt> </b>
-     <b>  <em> <dd>-Iván Rodriguez Garcia</dd> </em> </b>
-   <b> <dt>Edad:</dt> </b>
-      <b><em><dd>-19 años</dd> </em></b>
-    <b><dt>Correo:</dt> </b>
-       <b> <dd> <a href="mailto:irdg0031@alu.medac.es">irdg0031@alu.medac.es </a></dd> </b> 
-    
-
-<h2 style="color: crimson;"> Estudios:</h2> </h2>
-<ul>
-<b> <li> Bachillerato de Ciencias Sociales </li> </b>
-<b> <li> Estudiante de DAM</li> </b>
-<b> <li> Ingles B1 </li> </b>
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <header>
+        <nav id="navbar">
+            <div class="logo">Iván<span>Rodriguez</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#experiencia">Estudios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Iván Rodriguez</h1>
+                    <h2> Desarrollador de apps/webs</h2>
+                    <p><em>"Aquello imposible es aquello que no se intenta"</em></p>
+                    <div class="social-links"> <a href="https://github.com/irg0031" target="_blank"><i
+                                class="fab fa-github"></i></a> <a
+                            href="https://www.linkedin.com/in/ivan-rodriguez-7b2a212a5/?trk=opento_sprofile_topcard"
+                            target="_blank"><i class="fab fa-linkedin"></i></a> </div>
+                </div>
+                <div class="hero-image"> <img src="img/perfilcv.png" alt="profile image"> </div>
+            </div>
+        </section>
+        <section id="experiencia" class="experiencia">
+            <h2 class="section-title"> Estudios</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content"> <span class="date"> 2025 - Actualidad</span>
+                        <h3>Desarrollo de aplicaciones multiplataforma</h3>
+                        <h4> Medac Aventura</h4>
+                        <p>Desarrollo de apps/webs utilizando diferentes lenguajes</p>
+                        <ul class="skills">
+                            <li>HTML 5 </li>
+                            <li>CSS </li>
+                            <li>Java </li>
+                            <li>Phyton</li>
+                        </ul>
+                    </div>
+                    <p> </p>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.6557525460494!2d-3.7883062250511763!3d37.798106610817165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7dec3dd20ad%3A0x4fad82fdbe189c8!2sDavante%20MEDAC%20Aventura%20%F0%9F%A5%87%20Centro%20FP%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1759741352445!5m2!1ses!2ses" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content"> <span class="date"> 2023 - 2025</span>
+                        <h3>Bachillerato: CCSS</h3>
+                        <h4> IES Fuentezuelas</h4>
+                        <p>Ciencias aplicadas a las ciencias sociales</p>
+                        <ul class="skills">
+                            <li>TIC</li>
+                            <li>Matematicas</li>
+                            <li>Historia </li>
+                            <li>Economia</li>
+                        </ul>
+                    </div>
+                    <p> </p>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3742412638744!2d-3.807181023586781!3d37.7812684117851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd71774e45867%3A0x99df1e0032930534!2sIES%20Fuentezuelas!5e0!3m2!1ses!2ses!4v1760360201874!5m2!1ses!2ses" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+            </div>
+        </section>
+        <section id="proyectos" class="projects">
+            <h2 class="section-title">Proyectos Personales</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img"> <img src="img/photo-1619410283995-43d9134e7656 (1).jpg" alt="proyecto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>App de gestion de tareas </h3>
+                        <p>Aplicacion diseñada para gestionar diferentes tareas de tu dia dia</p>
+                        <div class="project-tech"> <span>HTML</span> <span>CSS</span> <span>Java</span> </div>
+                        <div class="project-links"> <a href="#" target="_blank"><i class="fas fa-link"></i>Demo</a> <a
+                                href="#" target="_blank"><i class="fab fa-github"></i>Codigo</a> </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"> <img src="img/4k-tech-acbb4nkybiijedhg.jpg" alt="proyecto 2"> </div>
+                    <div class="project-info">
+                        <h3>App de reserva de citas </h3>
+                        <p>Aplicacion diseñada para gestionar diferentes tareas de tu dia dia</p>
+                        <div class="project-tech"> <span>HTML</span> <span>CSS</span> <span>Java</span> </div>
+                        <div class="project-links"> <a href="#" target="_blank"><i class="fas fa-link"></i>Demo</a> <a
+                                href="#" target="_blank"><i class="fab fa-github"></i>Codigo</a> </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"> <img src="img/photo-1571171637578-41bc2dd41cd2.jpg" alt="proyecto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Control de gastos e ingresos </h3>
+                        <p>Aplicacion diseñada para gestionar diferentes tareas de tu dia dia</p>
+                        <div class="project-tech"> <span>HTML</span> <span>CSS</span> <span>Java</span> </div>
+                        <div class="project-links"> <a href="#" target="_blank"><i class="fas fa-link"></i>Demo</a> <a
+                                href="#" target="_blank"><i class="fab fa-github"></i>Codigo</a> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Iván Rodríguez- Todos los derechos reservados</p>
+            <div class="social-links"> <a href="https://github.com/irg0031" target="_blank"><i
+                        class="fab fa-github"></i></a> <a href="https://github.com/irg0031" target="_blank"><i
+                        class="fab fa-linkedin"></i></a> </div>
+        </div>
+    </footer>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
