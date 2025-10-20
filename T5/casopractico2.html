@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="proceso.php" method="post">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+         <p>Nombre: <input type="text" name="nombre" required> <br> <br> </p>
+        <p> Edad: <input type="number" name="edad"> </p>
+        <input type="checkbox" name="opcion1"> Quieres que te enviemos publicidad?
+        </fieldset>
+
+        <fieldset>
+            <legend>Tematica y mes de vacaciones</legend>
+        <select name="opciones" size="1">
+        <option value="1">Hotel</option>
+         <option value="2">Apartamento</option>
+         <option value="3">Habitacion</option>
+        </select>
+        <p>
+        <input type="radio" name="mes" value="S"> Septiembre
+        <input type="radio" name="mes" value="O"> Octubre
+        <input type="radio" name="mes" value="N"> Noviembre
+    </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Consulta</legend>
+            <p> <textarea name="comentario" rows="4" cols="27" autofocus></textarea></p>
+        </fieldset>
+
+        <input type="submit" value="Enviar"> 
+
+    </form>
+
+</body>
+</html>
