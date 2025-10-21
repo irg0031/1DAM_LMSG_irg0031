@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="proceso.php" method="post">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+         
+        <p>Nombre: <input type="text" name="nombre" required> <br> </p>
+        <p>Apellidos: <input type="text" name="apellidos" required> <br> </p>
+        <p> Edad: <input type="number" name="edad"> </p>
+        <p>
+            <p>Genero: </p>
+        <input type="radio" name="sexo" value="h"> Hombre
+        <input type="radio" name="sexo" value="m"> Mujer
+        </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contacto</legend>
+
+        <p>Correo electronico: <input type="text" name="Correo" required> <br> </p>
+        <p>Código postal: <input type="text" name="Código" required> <br> </p>
+        <p>Dirección: <input type="text" name="Dirección" required> <br> </p>
+        
+        <p> Ciudad:</p>
+        <select name="opciones" size="1">
+        <option value="1">Jaén</option>
+         <option value="2">Granada</option>
+         <option value="3">Madrid</option>
+        </select>
+
+        <p>Contraseña: <input type="text" name="Contraseña" required> <br> </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de interes </legend>
+
+        <p>
+        <p>Estado civil: </p>
+        <input type="radio" name="sexo" value="casado"> Casado
+        <input type="radio" name="sexo" value="no casado"> No casado
+        </p>
+
+        <p>Hobbies: </p>
+        <input type="checkbox" name="Deporte"> Deporte
+        <input type="checkbox" name="Cine" >  Cine
+        <input type="checkbox" name="Lectura">  Lectura
+        <input type="checkbox" name="Correr">  Correr
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios adicionales</legend>
+
+        <p>Escribe aqui tus comentarios: <textarea name="comentario" rows="4" cols="30" autofocus></textarea></p>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar"> 
+        <input type="reset" value="Borrar">
+
+
+
+    </form>
+
+    
+</body>
+</html>
