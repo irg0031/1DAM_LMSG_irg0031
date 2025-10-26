@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Horario</title>
+    <style>
+        :root {
+            --primary-color: #6c63ff;
+            --dark-bg: #0a0a0a;
+            --light-text: #f5f5f5;
+            --gray-text: #aaaaaa;
+            --card-bg: #1e1e1e;
+            --border-color: #2d2d2d;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: var(--card-bg);
+            transition: var(--transition);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+        }
+
+        tr:nth-child(even) td {
+            background-color: #2a2a2a;
+        }
+
+        tr[colspan] td {
+            background-color: #333333;
+            font-weight: bold;
+        }
+
+        td {
+            color: var(--light-text);
+        }
+
+        td:hover {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            cursor: default;
+        }
+
+        /* Opcional: ajustar ancho de la columna de hora */
+        td:first-child, th:first-child {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="6">1ºA Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</th>
+        </tr>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>8,30 - 9,30</td>
+            <td>Lenguajes de marcas y sistemas de gestión de información</td>
+            <td>Sistemas informáticos</td>
+            <td>Entornos de desarrollo</td>
+            <td>Bases de Datos</td>
+            <td>Programación</td>
+        </tr>
+        <tr>
+            <td>9,30 - 10,30</td>
+            <td>Lenguajes de marcas y sistemas de gestión de información</td>
+            <td>Sistemas informáticos</td>
+            <td>Entornos de desarrollo</td>
+            <td>Bases de Datos</td>
+            <td>Programación</td>
+        </tr>
+        <tr>
+            <td>10,30 - 11,30</td>
+            <td>Lenguajes de marcas y sistemas de gestión de información</td>
+            <td>Sistemas informáticos</td>
+            <td>Entornos de desarrollo</td>
+            <td>Bases de Datos</td>
+            <td>Programación</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="center">Descanso</td>
+        </tr>
+        <tr>
+            <td>12,00 - 13,00</td>
+            <td>Programación</td>
+            <td>Bases de Datos</td>
+            <td>Sostenibilidad</td>
+            <td>Programación</td>
+            <td>Itinerario personal para la empleabilidad I</td>
+        </tr>
+        <tr>
+            <td>13,00 - 14,00</td>
+            <td>Programación</td>
+            <td>Bases de Datos</td>
+            <td>Sistemas informáticos</td>
+            <td>Programación</td>
+            <td>Itinerario personal para la empleabilidad I</td>
+        </tr>
+        <tr>
+            <td>14,00 - 15,00</td>
+            <td>Programación</td>
+            <td>Bases de Datos</td>
+            <td>Sistemas informáticos</td>
+            <td>Digitalización</td>
+            <td>Itinerario personal para la empleabilidad I</td>
+        </tr>
+    </table>
+</body>
+</html>
